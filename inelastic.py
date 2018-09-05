@@ -123,7 +123,6 @@ class InvertedIndex:
 
 
 def get_inverted_index(es, index, doc_type, field, verbose):
-    raise ElasticsearchException('hoaaaa')
     if verbose:
         doc_count = es.count(index=index)['count']
         vprint('Index: {}'.format(index))
